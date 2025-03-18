@@ -1,0 +1,92 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "Q-nect API",
+        "description": "This api is made for the q-nect application",
+        "version": "1.0.0"
+    },
+    "basePath": "/v1",
+    "schemes": [
+        "http"
+    ],
+    "paths": {
+        "/users": {
+            "get": {
+                "tags": [
+                    "users"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The id of the task",
+                        "required": true,
+                        "type": "integer"
+                    }
+                ],
+                "summary": "Gives all the specific information about a task",
+                "description": "Gives all the specific information about a task",
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "302": {
+                        "description": "successful"
+                    }
+                }
+            }
+        },
+        "/teams": {
+            "get": {
+                "tags": [
+                    "teams"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The id of the task",
+                        "required": true,
+                        "type": "integer"
+                    }
+                ],
+                "summary": "Gives all the specific information about a task",
+                "description": "Gives all the specific information about a task",
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "302": {
+                        "description": "successful"
+                    }
+                }
+            }
+        },
+        "/tasks": {
+            "get": {
+                "tags": [
+                    "tasks"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The id of the task",
+                        "required": true,
+                        "type": "integer"
+                    }
+                ],
+                "summary": "Gives all the specific information about a task",
+                "description": "Gives all the specific information about a task",
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "302": {
+                        "description": "successful"
+                    }
+                }
+            }
+        }
+    }
+}
